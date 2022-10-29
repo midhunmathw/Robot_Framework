@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0 (Python 3.9.13 on darwin)" generated="20221030 02:08:22.794" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="/Users/midhunmathew/Documents/robot_framework/Selenium_Test/Tests">
+<suite id="s1-s1" name="Herokuapp" source="/Users/midhunmathew/Documents/robot_framework/Selenium_Test/Tests/herokuapp.robot">
+<test id="s1-s1-t1" name="Test_Case_1" line="9">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 02:08:22.883" level="INFO">Opening browser 'safari' to base url 'https://the-internet.herokuapp.com'.</msg>
+<status status="PASS" starttime="20221030 02:08:22.883" endtime="20221030 02:08:29.783"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:22.883" endtime="20221030 02:08:29.784"/>
+</kw>
+<kw name="Launch" library="herokuapp_keywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to the-internet</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221030 02:08:29.784" endtime="20221030 02:08:29.798"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:29.784" endtime="20221030 02:08:29.798"/>
+</kw>
+<kw name="Add/Remove Elements" library="herokuapp_keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Add/Remove Elements</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221030 02:08:29.799" level="INFO">Clicking link 'Add/Remove Elements'.</msg>
+<status status="PASS" starttime="20221030 02:08:29.799" endtime="20221030 02:08:29.835"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Add Element</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221030 02:08:29.835" level="INFO">Clicking button 'Add Element'.</msg>
+<msg timestamp="20221030 02:08:30.057" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221030 02:08:30.057" level="FAIL">Button with locator 'Add Element' not found.</msg>
+<status status="FAIL" starttime="20221030 02:08:29.835" endtime="20221030 02:08:30.059"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Delete</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:30.059" endtime="20221030 02:08:30.059"/>
+</kw>
+<status status="FAIL" starttime="20221030 02:08:29.798" endtime="20221030 02:08:30.059"/>
+</kw>
+<kw name="Teardown Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 02:08:30.059" endtime="20221030 02:08:30.085"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:30.059" endtime="20221030 02:08:30.085"/>
+</kw>
+<doc>Test to add an element and then delete the element</doc>
+<status status="FAIL" starttime="20221030 02:08:22.883" endtime="20221030 02:08:30.086">Button with locator 'Add Element' not found.</status>
+</test>
+<test id="s1-s1-t2" name="Test_Case_2" line="13">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221030 02:08:30.087" level="INFO">Opening browser 'safari' to base url 'https://the-internet.herokuapp.com'.</msg>
+<status status="PASS" starttime="20221030 02:08:30.086" endtime="20221030 02:08:36.164"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:30.086" endtime="20221030 02:08:36.164"/>
+</kw>
+<kw name="Launch" library="herokuapp_keywords">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Welcome to the-internet</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20221030 02:08:36.165" endtime="20221030 02:08:36.172"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:36.165" endtime="20221030 02:08:36.172"/>
+</kw>
+<kw name="Dynamic Loading" library="herokuapp_keywords">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Dynamic Loading</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221030 02:08:36.173" level="INFO">Clicking link 'Dynamic Loading'.</msg>
+<status status="PASS" starttime="20221030 02:08:36.173" endtime="20221030 02:08:36.200"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Example 1: Element on page that is hidden</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221030 02:08:36.202" level="INFO">Clicking link 'Example 1: Element on page that is hidden'.</msg>
+<msg timestamp="20221030 02:08:36.394" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221030 02:08:36.394" level="FAIL">Link with locator 'Example 1: Element on page that is hidden' not found.</msg>
+<status status="FAIL" starttime="20221030 02:08:36.201" endtime="20221030 02:08:36.394"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Start</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello World!</arg>
+<arg>timeout=20</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Example 2: Element rendered after the fact</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>Start</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Hello World!</arg>
+<arg>timeout=20</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.395" endtime="20221030 02:08:36.395"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" starttime="20221030 02:08:36.396" endtime="20221030 02:08:36.396"/>
+</kw>
+<status status="FAIL" starttime="20221030 02:08:36.172" endtime="20221030 02:08:36.396"/>
+</kw>
+<kw name="Teardown Browser" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221030 02:08:36.396" endtime="20221030 02:08:36.631"/>
+</kw>
+<status status="PASS" starttime="20221030 02:08:36.396" endtime="20221030 02:08:36.631"/>
+</kw>
+<doc>Test to showcase dynamically loaded page elements</doc>
+<status status="FAIL" starttime="20221030 02:08:30.086" endtime="20221030 02:08:36.631">Link with locator 'Example 1: Element on page that is hidden' not found.</status>
+</test>
+<doc>This is a sample test for automating Herokuapp using Robot Framework with Selenium</doc>
+<status status="FAIL" starttime="20221030 02:08:22.805" endtime="20221030 02:08:36.632"/>
+</suite>
+<status status="FAIL" starttime="20221030 02:08:22.794" endtime="20221030 02:08:36.634"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Herokuapp">Tests.Herokuapp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
